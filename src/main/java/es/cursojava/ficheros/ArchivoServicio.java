@@ -7,26 +7,63 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.Scanner;
 
+//nombre_yyyymmdd.txt
 public class ArchivoServicio {
 
 	public void crearArchivo(String nombre) {
 		File archivo = new File(nombre);
-		try (BufferedWriter buffer = new BufferedWriter(new FileWriter(archivo, false))) {
+		try (
+			FileWriter fw = new FileWriter(archivo, true);
+			BufferedWriter buffer = new BufferedWriter(fw);
+			) {
 
-			buffer.append("Hola que tal amigos!\n")
-					.append("Todo bien? yo escribiendo en un archivo...\n")
-					.append("Hasta luego Lucas!\n");
-			// buffer.close();
-			System.out.println("El archivo se ha creado con éxito!");
-		} catch (IOException e) {
-			e.printStackTrace();
+		 		buffer.append("Hola que tal amigos!\n")
+		 			.append("Todo bien? yo escribiendo en un archivo...\n")
+		 			.append("Hasta luego Lucas!\n");
+		 	// buffer.close();
+		 	System.out.println("El archivo se ha creado con éxito!");
+		 } catch (IOException e) {
+		 	e.printStackTrace();
 		}
+
+		
+		//try with resources
+		// try (Alumno a = new Alumno("N1",44,9)){
+		// 	System.out.println("Pasa" +a .getNombre());
+		// 	System.out.println("Termina");
+		// }catch (Exception e){
+		// 	e.printStackTrace();
+		// }
+
+		// BufferedWriter buffer = null;
+		// try      {
+		// 	FileWriter fw = new FileWriter(archivo, false);
+		// 	buffer = new BufferedWriter(fw);
+		// 	buffer.append("Hola que tal amigos!\n")
+		// 		.append("Todo bien? yo escribiendo en un archivo...\n")
+		// 		.append("Hasta luego Lucas!\n");
+
+			
+		// }catch (IOException e){
+		// 	e.printStackTrace();
+		// }finally{
+		// 	try {
+		// 		buffer.close();
+		// 	} catch (IOException e) {
+		// 		// TODO Auto-generated catch block
+		// 		e.printStackTrace();
+		// 	}	
+		// }
+
+
 	}
 
 	public void crearArchivo2(String nombre) {
@@ -37,13 +74,26 @@ public class ArchivoServicio {
 
 			buffer.println("Hola que tal amigos!");
 			buffer.println("Todo bien? yo acá escribiendo un archivo...");
-			buffer.printf("Hasta luego %s! %s", "JoseLuis5", "Cadena");
+			buffer.printf("Hasta luego %s! %s", "JoseLuis", "Cadena");
 			// buffer.close();
 			System.out.println("El archivo se ha creado con éxito!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+
+	public void crearArchivo3(String nombreFichero){
+		Path ruta = Paths.get(nombreFichero);
+		String contenido = "Hola, mundo!\nEste es un ejemplo usando java.nio.";
+        try {
+            Files.write(ruta, contenido.getBytes(StandardCharsets.UTF_8),
+                        StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+            System.out.println("Escritura completada.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+
 
 	public String leerArchivo(String nombre) throws IOException {
 		StringBuilder sb = new StringBuilder();
