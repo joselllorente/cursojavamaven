@@ -1,0 +1,13 @@
+Ejercicio 7: Relación Uno a Muchos (1:M) - Empleados y Equipos de Trabajo
+Cada empleado pertenece a un solo equipo de trabajo, pero cada equipo puede tener muchos empleados.
+
+Tabla equipos con id, nombre (not null), fecha creación default el dia que se inserta
+
++Insertar Datos con fechas
+
+CONSULTAS UNO A MUCHOS
+========================================================
++Obtener la lista de empleados con sus equipos
++Contar cuántos empleados hay en cada equipo
++Obtener los empleados con el salario más alto en cada equipo
++Obtener los empleados de los equipos creados hace más de 3 años
