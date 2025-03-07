@@ -5,7 +5,7 @@ Tabla certificaciones con id, nombre y descripción
 
 CONSULTAS MUCHOS A MUCHOS
 ========================================================
-Realiza una consulta SQL que muestre el nombre del empleado, el nombre de la certificación y la fecha en la que la obtuvo.
+Realiza una consulta SQL que muestre el nombre del empleado, el nombre de la certificación y la fecha en la que caduca.
 Escribe una consulta SQL que muestre el nombre del empleado y el número total de certificaciones que ha obtenido.
 Escribe una consulta SQL que muestre el nombre de la certificación y la cantidad de empleados que la han obtenido, pero solo si más de un empleado la ha conseguido.
 
@@ -16,6 +16,6 @@ Realiza una consulta SQL que muestre el nombre del empleado, su usuario de acces
 
 Realiza una consulta SQL que muestre el nombre del equipo, el número total de empleados en cada equipo y cuántos empleados tienen credenciales asignadas.
 
-Muestra el nombre del empleado, su usuario, el nombre de la certificación obtenida y la fecha en que la obtuvo.
+Muestra el nombre del empleado, su usuario, el nombre de la certificación obtenida y la fecha en que caduca.
 
 Muestra el nombre del equipo y el número total de certificaciones obtenidas por sus empleados.
