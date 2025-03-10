@@ -44,6 +44,11 @@ public class Ejercicio3Ficcheros {
                 String contenido = sb.toString();
                 contenido = contenido.replace("[", "")
                             .replace("]", "");
+
+
+                String texto = "Prueba ";
+                //texto.join(texto, "texto1","texto2");
+
                 //N1|24|A1,A2,A3
                 // String asignaturas = "";
                 // for (String asignatura : alumno.getAsignaturas()) {
