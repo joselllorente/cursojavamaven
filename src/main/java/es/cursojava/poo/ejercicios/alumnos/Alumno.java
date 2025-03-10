@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import es.cursojava.excepciones.ejercicio1.NotaInvalidaException;
 
-public class Alumno {
+public class Alumno implements AutoCloseable{
 	private String nombre;
 	private String apellidos;
 	private int edad;
@@ -106,6 +106,12 @@ public class Alumno {
 	public String toString() {
 		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", notaMedia=" + notaMedia
 				+ ", email=" + email + ", asignaturas=" + Arrays.toString(asignaturas) + "]";
+	}
+
+	@Override
+	public void close() throws Exception {
+		System.out.println("Cerrando al alumno");
+		//throw new UnsupportedOperationException("Unimplemented method 'close'");
 	}
 	
 	

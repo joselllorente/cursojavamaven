@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class UtilidadesFicheros {
     private static final Logger logger = LoggerFactory.getLogger(UtilidadesFicheros.class);
+    public static final String SEPARADOR_PIPE = "|";
 
     public static void crearDirectorios (File dirFicheros, String [] directorios){
         crearDirectorios(dirFicheros, Arrays.asList(directorios));
