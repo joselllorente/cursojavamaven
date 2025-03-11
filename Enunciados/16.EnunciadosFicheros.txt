@@ -28,3 +28,14 @@ Por cada alumno crear un linea de datos en el fichero alumnos.txt con el siguien
 nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
 nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
 nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
+
+Ejercicio 4. Leer fichero eventos.txt
+=============================================================
+Crear una clase que permita guardar toda la información de cada evento
+Leer el fichero y cargar los datos en objetos 
+Cargar toda la información en un mapa que permita
++ Saber cuantos eventos hay por ciudad. 
+        Ej: Madrid: 18 ....
++ Guardar todos los eventos de una ciudad en un fichero
+        Ej: Si la ciudad es Madrid, fichero madrid.txt con 18 líneas
++ Que ciudades tienen eventos gratuitos
