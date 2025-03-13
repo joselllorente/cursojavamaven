@@ -4,3 +4,74 @@
 2025-02-26 16:30:09 [main] ERROR es.cursojava.Main - Error Hello world!
 2025-02-26 16:30:57 [main] ERROR es.cursojava.Main - Error Hello world!
 2025-02-26 17:06:18 [main] ERROR es.cursojava.Main - Error Hello world!
+2025-02-26 17:51:27 [main] ERROR es.cursojava.Main - Error Hello world2!
+2025-02-26 17:52:57 [main] DEBUG es.cursojava.Main - Debug Hello world2!
+2025-02-26 17:52:57 [main] INFO  es.cursojava.Main - Info Hello world2!
+2025-02-26 17:52:57 [main] WARN  es.cursojava.Main - Warn Hello world2!
+2025-02-26 17:52:57 [main] ERROR es.cursojava.Main - Error Hello world2!
+2025-02-26 17:54:22 [main] WARN  es.cursojava.Main - Warn Hello world2!
+2025-02-26 17:54:22 [main] ERROR es.cursojava.Main - Error Hello world2!
+2025-02-27 16:45:24 [main] WARN  es.cursojava.Main - Warn Hello world2!
+2025-02-27 16:45:24 [main] ERROR es.cursojava.Main - Error Hello world2!
+2025-03-03 17:34:14 [main] ERROR e.c.ficheros.EmpezandoConFicheros - Error al crear el fichero C:\Users\Tardes\Ficherosss\fichero2.txt: El sistema no puede encontrar la ruta especificada
+java.io.IOException: El sistema no puede encontrar la ruta especificada
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createNewFile(File.java:1043)
+	at es.cursojava.ficheros.EmpezandoConFicheros.main(EmpezandoConFicheros.java:44)
+2025-03-05 16:52:01 [main] WARN  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 16:53:01 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros existe. Creando nuevos directorios si no existieran
+2025-03-05 16:53:01 [main] WARN  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 16:53:01 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\imagenes se ha creado
+2025-03-05 16:53:01 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\otros se ha creado
+2025-03-05 17:17:52 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros existe. Creando nuevos directorios si no existieran
+2025-03-05 17:17:52 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos se ha creado
+2025-03-05 17:17:52 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes se ha creado
+2025-03-05 17:17:52 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros se ha creado
+2025-03-05 17:22:56 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros existe. Creando nuevos directorios si no existieran
+2025-03-05 17:22:56 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:22:56 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:22:56 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 17:23:07 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero imagen1.jpg es .jpg
+2025-03-05 17:23:57 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero.getafe.txt es .getafe.txt
+2025-03-05 17:25:16 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros existe. Creando nuevos directorios si no existieran
+2025-03-05 17:25:16 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:25:16 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:25:16 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 17:25:37 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero.getafe.txt es .getafe.txt
+2025-03-05 17:26:44 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros existe. Creando nuevos directorios si no existieran
+2025-03-05 17:26:44 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:26:44 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:26:44 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 17:27:00 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero FICHERO.getafe.txt es .txt
+2025-03-05 17:35:40 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 17:35:40 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos se ha creado
+2025-03-05 17:35:40 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes se ha creado
+2025-03-05 17:35:40 [main] INFO  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros se ha creado
+2025-03-05 17:36:22 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero1.getafe.txt es .txt
+2025-03-05 17:41:59 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 17:41:59 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:41:59 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:41:59 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 17:42:08 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero1.getafe.txt es .txt
+2025-03-05 17:42:08 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - Fichero C:\Users\Tardes\Ficheros\documentos\fichero1.getafe.txt creado correctamente
+2025-03-05 17:50:11 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 17:50:11 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:50:11 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:50:11 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 17:50:27 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero2.getafe.txt es .txt
+2025-03-05 17:52:40 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - Fichero C:\Users\Tardes\Ficheros\documentos\fichero2.getafe.txt creado correctamente
+2025-03-05 17:53:34 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero imagen.jpg es .jpg
+2025-03-05 17:54:34 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - Fichero C:\Users\Tardes\Ficheros\imagenes\imagen.jpg creado correctamente
+2025-03-05 17:54:47 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - La extension del fichero fichero.pdf es .pdf
+2025-03-05 17:55:31 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 17:55:31 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 17:55:31 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 17:55:31 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 18:10:49 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 18:10:49 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 18:10:49 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 18:10:49 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado
+2025-03-05 18:16:13 [main] INFO  e.c.f.ejercicios.Ejercicio1Ficheros - El directorio C:\Users\Tardes\Ficheros\ existe. Creando nuevos directorios si no existieran
+2025-03-05 18:16:13 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\documentos no se ha creado
+2025-03-05 18:16:13 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\imagenes no se ha creado
+2025-03-05 18:16:13 [main] WARN  e.cursojava.utils.UtilidadesFicheros - El directorio C:\Users\Tardes\Ficheros\otros no se ha creado

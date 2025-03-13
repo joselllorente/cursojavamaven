@@ -98,13 +98,13 @@ public class ArchivoServicio {
 	public String leerArchivo(String nombre) throws IOException {
 		StringBuilder sb = new StringBuilder();
 		File archivo = new File(nombre);
-//		FileReader fileReader = new FileReader(archivo);
-//		BufferedReader reader = new BufferedReader(fileReader);
-//
-//		String linea;
-//		while ((linea = reader.readLine()) != null) {
-//			sb.append(linea).append("\n");
-//		}
+		// FileReader fileReader = new FileReader(archivo);
+		// BufferedReader reader = new BufferedReader(fileReader);
+
+		// String linea;
+		// while ((linea = reader.readLine()) != null) {
+		// 	sb.append(linea).append("\n");
+		// }
 
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))){
 
@@ -113,7 +113,8 @@ public class ArchivoServicio {
                 sb.append(linea).append("\n");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+			e.printStackTrace();
+			throw e;
         }
 		return sb.toString();
 	}
@@ -125,7 +126,8 @@ public class ArchivoServicio {
 
 			s.useDelimiter("\n");
 			while (s.hasNext()) {
-				sb.append(s.next()).append("\n");
+				String linea = s.next();
+				sb.append(linea).append("\n");
 			}
 
 		} catch (IOException e) {
