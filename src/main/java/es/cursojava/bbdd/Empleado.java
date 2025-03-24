@@ -7,17 +7,17 @@ public class Empleado {
 	private String nombre;
 	private int edad;
 	private double salario;
-	private int id_departamento;
+	private int idDepartamento;
 	private Date fecha_contratacion;
 	
 	
-	public Empleado(int id, String nombre, int edad, double salario, int id_departamento, Date fecha_contratacion) {
+	public Empleado(int id, String nombre, int edad, double salario, int idDepartamento, Date fecha_contratacion) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.edad = edad;
 		this.salario = salario;
-		this.id_departamento = id_departamento;
+		this.idDepartamento = idDepartamento;
 		this.fecha_contratacion = fecha_contratacion;
 	}
 	
@@ -46,11 +46,11 @@ public class Empleado {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	public int getId_departamento() {
-		return id_departamento;
+	public int getidDepartamento() {
+		return idDepartamento;
 	}
-	public void setId_departamento(int id_departamento) {
-		this.id_departamento = id_departamento;
+	public void setidDepartamento(int idDepartamento) {
+		this.idDepartamento = idDepartamento;
 	}
 	public Date getFecha_contratacion() {
 		return fecha_contratacion;

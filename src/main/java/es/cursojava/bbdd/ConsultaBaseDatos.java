@@ -5,13 +5,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.sql.Date;
 import java.util.List;
 
 import es.cursojava.utils.UtilidadesBD;
 
 public class ConsultaBaseDatos {
     private static final String CONSULTA_EMPLEADOS=""+
-                    " SELECT ID, NOMBRE, EDAD, SALARIO "+
+                    " SELECT ID, NOMBRE, EDAD, SALARIO, FECHA_CONTRATACION "+
                     " FROM EMPLEADOS";
     public static void main(String[] args) {
 
@@ -82,11 +83,13 @@ public class ConsultaBaseDatos {
                 String nombre = rs.getString("NOMBRE");
                 int edad = rs.getInt("EDAD");
                 double salario = rs.getDouble("SALARIO");
+                Date fecha = rs.getDate("FECHA_CONTRATACION");
 
                 System.out.println("Registro.[ id: "+ id + ", nombre: "+ nombre
-                + ", edad: " + edad + ", salario: "+salario+ "]");
+                + ", edad: " + edad + ", salario: "+salario+ " fecha:" + fecha +  "]");
 
-                Empleado emp = new Empleado(id, nombre, edad, salario, id, null);
+                Empleado emp = new Empleado(id, nombre, edad, salario, id, fecha);
+                System.out.println("Fecha empleado "+emp.getFecha_contratacion());
                 empleados.add(emp);
             }
             
