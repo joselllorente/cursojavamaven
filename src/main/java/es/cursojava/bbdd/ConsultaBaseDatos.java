@@ -89,6 +89,7 @@ public class ConsultaBaseDatos {
                 Empleado emp = new Empleado(id, nombre, edad, salario, id, null);
                 empleados.add(emp);
             }
+            
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
