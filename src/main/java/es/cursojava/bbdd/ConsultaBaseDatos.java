@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.List;
 
 import es.cursojava.utils.UtilidadesBD;
@@ -16,7 +18,16 @@ public class ConsultaBaseDatos {
                     " FROM EMPLEADOS";
     public static void main(String[] args) {
 
-        System.out.println("Num empleados "+consultaEmpleadoEdad(0,0).size());
+        
+        //Este muestra todos los registros de la tabla por la inyección de código
+        String nombre2 = "Laura Torres' or '1'='1";
+        consultaEmpleadosPorNombre(nombre2);
+
+        //Al usar PrepareStament la consulta va parametrizada y se evita inyección de código
+        String nombre1 = "Laura Torres";
+        consultaEmpleadosPorNombrePS(nombre1);
+        
+        //System.out.println("Num empleados "+consultaEmpleadoEdad(0,0).size());
 
     }
 
@@ -109,6 +120,50 @@ public class ConsultaBaseDatos {
 
 
         return empleados;
+    }
+
+
+    public static List<Empleado> consultaEmpleadosPorNombre (String nombre){
+        // Se construye la consulta concatenando el valor directamente
+        String sql = "SELECT * FROM EMPLEADOS WHERE NOMBRE = '" + nombre + "'";
+        System.out.println(sql);
+        try (Connection conn = UtilidadesBD.crearConexion();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+
+            while (rs.next()) {
+                System.out.println("ID: " + rs.getInt("ID") +
+                                   ", NOMBRE: " + rs.getString("NOMBRE"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+
+    public static List<Empleado> consultaEmpleadosPorNombrePS (String nombre){
+        // Se construye la consulta concatenando el valor directamente
+        String sql = "SELECT * FROM EMPLEADOS WHERE NOMBRE = ? AND EDAD> ?";
+        System.out.println(sql);
+        try {
+            Connection conn = UtilidadesBD.crearConexion();
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, nombre);
+            ps.setInt(2, 20);
+
+            ResultSet rs = ps.executeQuery();
+            //ps.executeUpdate();
+            while (rs.next()) {
+                System.out.println("ID: " + rs.getInt("ID") +
+                                   ", NOMBRE: " + rs.getString("NOMBRE"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 }
