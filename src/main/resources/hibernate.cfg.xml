@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-5.3.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Datos de conexión -->
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/XEPDB1</property>
+        <property name="hibernate.connection.username">tu_usuario</property>
+        <property name="hibernate.connection.password">tu_contraseña</property>
+
+        <!-- Dialecto de Hibernate para Oracle -->
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+
+        <!-- Mostrar SQL por consola -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Opción de esquema -->
+        <!-- <property name="hibernate.default_schema">tu_usuario</property> -->
+
+        <!-- Generar las tablas automáticamente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Clase mapeada -->
+        <mapping class="es.cursojava.hibernate.Persona"/>
+
+    </session-factory>
+</hibernate-configuration>
