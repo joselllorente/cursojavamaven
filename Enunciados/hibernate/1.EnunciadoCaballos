@@ -1,0 +1,15 @@
+Crear una entidad llamada CaballoCarrera que represente la información de un caballo de carreras. 
+
+La clase debe llamarse CaballoCarrera y debe mapearse a una tabla llamada TB_CABALLOS.
+
+Debe tener los siguientes atributos con sus respectivas restricciones:
+
+id		Long	Clave primaria. Valor generado automáticamente.
+nombre		String	Obligatorio, único, longitud máxima de 50 caracteres.
+edad		int	Obligatorio. Valor mínimo: 2. Valor máximo: 30.
+velocidadMaxima	double	Obligatorio. Entre 30.0 y 80.0 km/h.
+numeroDeTriunfosint	Valor mínimo: 0.
+experiencia	double	Valor entre 0.0 y 10.0.
+estaActivo	boolean	Puede ser verdadero o falso. Indica si el caballo está actualmente compitiendo.
+
+Crear 5 caballos e insertarlos en la tabla
