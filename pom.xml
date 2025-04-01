@@ -30,5 +30,20 @@
           <artifactId>ojdbc11</artifactId>
           <version>23.7.0.25.01</version>
       </dependency>
+
+      <!-- Hibernate Core -->
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>6.3.1.Final</version>
+      </dependency>
+
+      <!-- JPA API -->
+      <dependency>
+        <groupId>jakarta.persistence</groupId>
+        <artifactId>jakarta.persistence-api</artifactId>
+        <version>3.1.0</version>
+      </dependency>
+
     </dependencies>
 </project>
