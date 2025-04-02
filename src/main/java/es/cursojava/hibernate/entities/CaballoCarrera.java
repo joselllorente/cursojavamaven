@@ -1,5 +1,6 @@
 package es.cursojava.hibernate.entities;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +11,7 @@ import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+
 
 @Entity
 @Table(name = "TB_CABALLOS")
@@ -22,17 +24,17 @@ public class CaballoCarrera {
 	@Column(name = "nombre", nullable = false, length = 50, unique = true)
 	private String nombre;
 	
-	@Column(name = "edad", nullable = false)
+	@Column(name = "edad", nullable = false, columnDefinition = "int check (edad>=2 and edad<=30) ")
 	@Min(value = 2)
 	@Max(value = 30)
 	private int edad;
 
-	@Column(name = "velocidad maxima", nullable = false)
+	@Column(name = "velocidad_maxima", nullable = false)
 	@DecimalMin(value = "30.0")
 	@DecimalMax(value = "80.0")
 	private double velocidadMaxima;
 
-	@Column(name = "numero de triunfos")
+	@Column(name = "triunfos")
 	@Min(value = 0)
 	private int numeroTriunfos;
 
@@ -41,7 +43,7 @@ public class CaballoCarrera {
 	@DecimalMax(value = "10.0")
 	private double experiencia;
 
-	@Column(name = "esta activo")
+	@Column(name = "activo")
 	private boolean estaActivo;
 
 	public CaballoCarrera() {

@@ -15,6 +15,7 @@
 
         <!-- Mostrar SQL por consola -->
         <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
 
         <!-- Crear y borrar la base de datos en cada ejecución -->
         <!-- <property name="hibernate.hbm2ddl.auto">create-drop</property> -->
@@ -29,6 +30,7 @@
         create-only:	Crea el esquema al iniciar, pero no lo elimina al cerrar (Hibernate 5.5+). -->
         <!-- Entidad mapeada -->
         <mapping class="es.cursojava.hibernate.Persona"/>
+        <mapping class="es.cursojava.hibernate.entities.CaballoCarrera"/>
 
     </session-factory>
 </hibernate-configuration>
