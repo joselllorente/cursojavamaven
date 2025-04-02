@@ -69,8 +69,6 @@ public class Ejercicio3JDBC {
                 e.printStackTrace();
             }
         }
-
-
         return empleados;
     }
 
