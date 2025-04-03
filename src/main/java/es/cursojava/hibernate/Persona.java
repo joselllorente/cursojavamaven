@@ -12,7 +12,7 @@ import jakarta.persistence.Transient;
 @Table(name = "TB_PERSONAS")
 public class Persona {
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     // AUTO:	Delega la estrategia al proveedor JPA (Hibernate decide según la BBDD).
     // IDENTITY:	Usa una columna auto-incremental. Funciona bien con MySQL, SQL Server, Oracle 12c+…
     // SEQUENCE:	 Usa una secuencia de base de datos (muy común en Oracle, PostgreSQL, etc.).
@@ -31,7 +31,10 @@ public class Persona {
     private String estadoCivil;
 
     // Constructores
-    public Persona() {}
+    public Persona() {
+        System.out.println("Se está creando un objeto de tipo Persona");
+    }
+    
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
