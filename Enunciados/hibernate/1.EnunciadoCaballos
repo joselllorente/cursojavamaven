@@ -1,0 +1,32 @@
+Crear una entidad llamada CaballoCarrera que represente la información de un caballo de carreras. 
+
+La clase debe llamarse CaballoCarrera y debe mapearse a una tabla llamada TB_CABALLOS.
+
+Debe tener los siguientes atributos con sus respectivas restricciones:
+
+id		Long	Clave primaria. Valor generado automáticamente.
+nombre		String	Obligatorio, único, longitud máxima de 50 caracteres.
+edad		int	Obligatorio. Valor mínimo: 2. Valor máximo: 30.
+velocidadMaxima	double	Obligatorio. Entre 30.0 y 80.0 km/h.
+numeroDeTriunfosint	Valor mínimo: 0.
+experiencia	double	Valor entre 0.0 y 10.0.
+estaActivo	boolean	Puede ser verdadero o falso. Indica si el caballo está actualmente compitiendo.
+
+Crear 5 caballos e insertarlos en la tabla
+
+
+Ejericio 2.
+====================================================
+Crear Menú:
+
+1. Registrar Caballo, pedir datos de un caballo e insertarlos en la base de datos
+2. Iniciar Carrera, 
+	(Consulta a BBDD)
+	+ Si no hay dos caballos activos no se puede iniciar
+	+ Si hay dos caballos o más activos se inicia la carrera
+	
+	+ 1000 distancia a la que tiene que llegar un caballo para ganar la carrera
+	+ Por cada caballo activo avanzara = (Aleatorio 1-50) + experiencia * (1-10) - edad*(1-10) = ???
+	
+	+ Mostrar datos del caballo ganador
+3. Salir

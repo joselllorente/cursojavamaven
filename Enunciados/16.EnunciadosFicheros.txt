@@ -1,0 +1,41 @@
+Ejercicio 1:
+============================================================
+Ficheros FILE: 
+Crear en la carpeta Ficheros:
+Crear el directorio llamado ‘Imágenes’. 
+Crear el directorio llamado ‘Documentos’. 
+Crear el directorio llamado ‘Otros’. 
+
+Preguntar por 5 nombres de ficheros.
+    Si el fichero tiene la extensión de una imagen (.gif - .jpg - .png) lo vas a crear en la carpeta de imágenes. 
+    Si el fichero es un .txt en documentos. 
+    Si no es una imagen y no es un documento lo añadirán en otros. 
+
+Coger todos los ficheros que están en el directorio de otros, renombrarlos con nuestro nombre y con un contador para clasificar los archivos.
+
+Ejercicio 2:
+============================================================
+Preguntamos por un directorio
+Si existe 
+Nombre, tamaño y si es oculto (De cada fichero).
+
+Ejercicio 3. Escritura en fichero
+=============================================================
+Crear 3 objetos de tipo alumno
+Añadirlos a una lista
+Recorrer la lista
+Por cada alumno crear un linea de datos en el fichero alumnos.txt con el siguiente formato:
+nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
+nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
+nombre|apellidos|edad|notaMedia|email|asignatura1,asignatura2,asignatura3
+
+Ejercicio 4. Leer fichero eventos.txt
+=============================================================
+Crear una clase que permita guardar toda la información de cada evento
+Leer el fichero y cargar los datos en objetos 
+Cargar toda la información en un mapa que permita
++ Saber cuantos eventos hay por ciudad. 
+        Ej: Madrid: 18 ....
++ Guardar todos los eventos de una ciudad en un fichero
+        Ej: Si la ciudad es Madrid, fichero madrid.txt con 18 líneas
++ Que ciudades tienen eventos gratuitos

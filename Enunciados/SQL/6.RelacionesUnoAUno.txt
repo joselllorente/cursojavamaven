@@ -1,0 +1,13 @@
+Tabla credenciales_empleados
+	id number(5) pk
+	nombre_usuario (15) UNIQUE
+	password (15)
+	empleado_id FK --> empleados
+
+INSERTAR datos de credenciales para los empleados existentes
+
+Obtener todos los empleados con sus credenciales
+
+Obtener todos los nombres de usuario de los empleados del departamento 1
+
+Modificar la contraseña de todos los usuarios del departamento 2 a un valor por defecto

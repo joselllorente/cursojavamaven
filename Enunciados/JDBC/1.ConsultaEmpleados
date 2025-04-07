@@ -1,0 +1,23 @@
+Ejercicio 1
+====================================================================
+-Crear una clase Empleado en Java con los mismos atributos que columnas hay en la tabla empleados
+-Hacer desde java una consulta a la base de datos para obtener todos los empleados
+-Guardar la información de cada registro de la tabla en un objeto de la clase creada Empleado
+-Meter todos los objetos de tipo Empleado creados en una lista
+-Indicar el tamaño de la lista (debe ser igual al número de registros de la tabla)
+
+Ejercicio 2
+====================================================================
+- Crear un método al que le pasemos una edad y devuelva una lista con los empleados que tienen una edad superior a la indicada
+- Indicar el tamaño de la lista
+
+Ejercicio 3
+====================================================================
+-Crear un mapa donde se use como clave el nombre de un equipo y como valor todos los empleados que sean de ese equipo
+-indicar cuantos empleados hay en cada equipo
+
+Ejercicio 4
+====================================================================
+- Crear una clase para representar los datos de la tabla equipos
+- Mostrar los datos de todos los equipos y todos sus empleados  
+
