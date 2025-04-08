@@ -4,6 +4,13 @@
 2025-02-26 16:30:09 [main] ERROR es.cursojava.Main - Error Hello world!
 2025-02-26 16:30:57 [main] ERROR es.cursojava.Main - Error Hello world!
 2025-02-26 17:06:18 [main] ERROR es.cursojava.Main - Error Hello world!
+<<<<<<< HEAD
+2025-02-26 17:16:50 [main] ERROR es.cursojava.Main - Error Hello world!
+2025-02-27 16:35:44 [main] DEBUG es.cursojava.Main - Debug Hello world2!
+2025-02-27 16:35:44 [main] INFO  es.cursojava.Main - Info Hello world2!
+2025-02-27 16:35:44 [main] WARN  es.cursojava.Main - Warn Hello world2!
+2025-02-27 16:35:44 [main] ERROR es.cursojava.Main - Error Hello world2!
+=======
 2025-02-26 17:51:27 [main] ERROR es.cursojava.Main - Error Hello world2!
 2025-02-26 17:52:57 [main] DEBUG es.cursojava.Main - Debug Hello world2!
 2025-02-26 17:52:57 [main] INFO  es.cursojava.Main - Info Hello world2!
@@ -1634,7 +1641,7 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: la tabla o vista no e
 2025-04-02 18:16:27 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4f7bb8df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:16:27 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48106381] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:16:27 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 2290, SQLState: 23000
-2025-04-02 18:16:27 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricción de control (GETAFESQL.SYS_C008952) violada
+2025-04-02 18:16:27 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricciï¿½n de control (GETAFESQL.SYS_C008952) violada
 
 https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 18:24:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
@@ -1654,7 +1661,7 @@ https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 18:24:39 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4f7bb8df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:24:39 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48106381] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:24:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 2290, SQLState: 23000
-2025-04-02 18:24:40 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricción de control (GETAFESQL.SYS_C008964) violada
+2025-04-02 18:24:40 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricciï¿½n de control (GETAFESQL.SYS_C008964) violada
 
 https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 18:26:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
@@ -1674,7 +1681,7 @@ https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 18:26:37 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e04abc5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:26:37 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3982206a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 18:26:37 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 2290, SQLState: 23000
-2025-04-02 18:26:37 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricción de control (GETAFESQL.SYS_C008976) violada
+2025-04-02 18:26:37 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricciï¿½n de control (GETAFESQL.SYS_C008976) violada
 
 https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 19:10:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
@@ -1710,7 +1717,7 @@ https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 19:10:36 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e72fb04] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 19:10:36 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38dbeb39] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 19:10:36 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 2290, SQLState: 23000
-2025-04-02 19:10:36 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricción de control (GETAFESQL.SYS_C009000) violada
+2025-04-02 19:10:36 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricciï¿½n de control (GETAFESQL.SYS_C009000) violada
 
 https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 19:11:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
@@ -1730,7 +1737,7 @@ https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 19:11:37 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6a6e9289] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 19:11:37 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@f76872f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-04-02 19:11:37 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 2290, SQLState: 23000
-2025-04-02 19:11:37 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricción de control (GETAFESQL.SYS_C009012) violada
+2025-04-02 19:11:37 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-02290: restricciï¿½n de control (GETAFESQL.SYS_C009012) violada
 
 https://docs.oracle.com/error-help/db/ora-02290/
 2025-04-02 19:34:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
@@ -1920,6 +1927,7 @@ https://docs.oracle.com/error-help/db/ora-02290/
 	Maximum pool size: 20
 2025-04-03 17:31:27 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2025-04-03 17:31:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+<<<<<<< HEAD
 2025-04-07 20:37:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
 2025-04-07 20:37:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
 2025-04-07 20:37:40 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
@@ -1986,5 +1994,8 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 	Minimum pool size: 1
 	Maximum pool size: 20
 2025-04-07 20:37:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 12541, SQLState: 66000
-2025-04-07 20:37:40 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12541: No se puede conectar. No hay ningún listener en host localhost port 1522. (CONNECTION_ID=Lq8bX4FwTPON7LR32YEE+w==)
+2025-04-07 20:37:40 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ORA-12541: No se puede conectar. No hay ningï¿½n listener en host localhost port 1522. (CONNECTION_ID=Lq8bX4FwTPON7LR32YEE+w==)
 https://docs.oracle.com/error-help/db/ora-12541/
+=======
+>>>>>>> branch 'main' of https://github.com/joselllorente/cursojavamaven.git
+>>>>>>> a15a45a7340a466fcd1ea9fc2d35c84752ef709f
