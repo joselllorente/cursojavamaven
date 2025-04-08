@@ -29,10 +29,10 @@ public class CaballoDAOImpl implements CaballoDAO {
     @Override
     public List<CaballoCarrera> obtenerActivos() {
         Session session = HibernateUtil.getSession();
-        String queryActivos = "from CaballoCarrera cc where cc.estaActivo =: activo";
+        String queryActivos = "from CaballoCarrera cc where cc.estaActivo =: param1";
 
         Query<CaballoCarrera> query = session.createQuery(queryActivos, CaballoCarrera.class);
-        query.setParameter("activo", true);
+        query.setParameter("param1", true);
         List<CaballoCarrera> lista = query.list();
         
         return lista;

@@ -1999,3 +1999,73 @@ https://docs.oracle.com/error-help/db/ora-12541/
 =======
 >>>>>>> branch 'main' of https://github.com/joselllorente/cursojavamaven.git
 >>>>>>> a15a45a7340a466fcd1ea9fc2d35c84752ef709f
+2025-04-08 17:23:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
+2025-04-08 17:23:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-08 17:23:14 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-08 17:23:15 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-08 17:23:15 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1522:XE]
+	Database driver: oracle.jdbc.OracleDriver
+	Database version: 21.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-04-08 17:23:15 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-08 17:23:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 17:36:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
+2025-04-08 17:36:29 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-08 17:36:29 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-08 17:36:30 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-08 17:36:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1522:XE]
+	Database driver: oracle.jdbc.OracleDriver
+	Database version: 21.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-04-08 17:36:30 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-08 17:36:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 17:37:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
+2025-04-08 17:37:12 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-08 17:37:12 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-08 17:37:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-08 17:37:13 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1522:XE]
+	Database driver: oracle.jdbc.OracleDriver
+	Database version: 21.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-04-08 17:37:13 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-08 17:37:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 17:41:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
+2025-04-08 17:41:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-08 17:41:48 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-08 17:41:49 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-08 17:41:49 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1522:XE]
+	Database driver: oracle.jdbc.OracleDriver
+	Database version: 21.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-04-08 17:41:49 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-08 17:41:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 18:13:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.12.Final
+2025-04-08 18:13:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-08 18:13:57 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-08 18:13:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-08 18:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1522:XE]
+	Database driver: oracle.jdbc.OracleDriver
+	Database version: 21.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-04-08 18:13:58 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-08 18:13:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

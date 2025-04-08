@@ -7,6 +7,7 @@ public class CaballoDTO {
     private int numeroDeTriunfos;
     private double experiencia;
     private boolean activo;
+    private double avance;
 
     public CaballoDTO(String nombre, int edad, double velocidadMaxima, int numeroDeTriunfos, double experiencia) {
         this.nombre = nombre;
@@ -59,9 +60,17 @@ public class CaballoDTO {
         this.activo = activo;
     }
 
+    public double getAvance() {
+        return avance;
+    }
+    public void setAvance(double avance) {
+        this.avance = avance;
+    }
+
     @Override
     public String toString() {
         return nombre + " | Edad: " + edad + ", Velocidad: " + velocidadMaxima +
-                " km/h, Triunfos: " + numeroDeTriunfos + ", Exp: " + experiencia;
+                " km/h, Triunfos: " + numeroDeTriunfos + ", Exp: " + experiencia
+                + ", activo: " + activo;
     }
 }

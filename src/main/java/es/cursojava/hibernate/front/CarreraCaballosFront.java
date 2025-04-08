@@ -19,8 +19,8 @@ public class CarreraCaballosFront {
         System.out.println("Bienvenido a la carrera "+ this.nombreCarrera);
         int opcion;
         do {
-            Utilidades.pintaMenu(new String[]{"1.Insertar nuevo caballo ",
-                "2.Mostrar Caballos","3.Iniciar carrera","4.Salir"} , "");
+            Utilidades.pintaMenu(new String[]{"1. Insertar nuevo caballo ",
+                "2. Mostrar Caballos","3. Iniciar carrera","4. Salir"} , "");
             opcion = Utilidades.pideDatoNumerico("Elige una opción: ");
             
             switch (opcion) {
@@ -43,7 +43,7 @@ public class CarreraCaballosFront {
 
     }
 
-    private CaballoDTO creaCaballo (){
+    private CaballoDTO creaCaballo () {
        
         String nombre = Utilidades.pideDatoCadena("Nombre: ");
         int edad = Utilidades.pideDatoNumerico("edad: ");
