@@ -42,8 +42,11 @@ public class CaballoDAOImpl implements CaballoDAO {
     public void eliminar(Long id) {
         Session session = HibernateUtil.getSession();
         Transaction tx = session.beginTransaction();
-        CaballoCarrera c = session.find(CaballoCarrera.class, id);
-        if (c != null) session.remove(c);
+        //CaballoCarrera c = session.find(CaballoCarrera.class, id);
+        CaballoCarrera c = new CaballoCarrera(id,"c1",2,34,11,1,true);
+        if (c != null){
+            session.remove(c);
+        }
         tx.commit();
     }
 

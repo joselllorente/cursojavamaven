@@ -69,7 +69,7 @@ public class CaballoDTO {
 
     @Override
     public String toString() {
-        return nombre + " | Edad: " + edad + ", Velocidad: " + velocidadMaxima +
+        return  "|nombre: "+ nombre + " | Edad: " + edad + ", Velocidad: " + velocidadMaxima +
                 " km/h, Triunfos: " + numeroDeTriunfos + ", Exp: " + experiencia
                 + ", activo: " + activo;
     }

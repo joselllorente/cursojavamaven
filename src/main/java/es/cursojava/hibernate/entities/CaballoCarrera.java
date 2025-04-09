@@ -47,6 +47,22 @@ public class CaballoCarrera {
 	public CaballoCarrera() {
 	}
 
+	public CaballoCarrera(Long id) {
+		this.id = id;
+	}
+
+	public CaballoCarrera(Long id, String nombre, int edad, double velocidadMaxima, 
+			int numeroTriunfos, double experiencia,
+			boolean estaActivo) {
+		this.id = id;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.velocidadMaxima = velocidadMaxima;
+		this.numeroTriunfos = numeroTriunfos;
+		this.experiencia = experiencia;
+		this.estaActivo = estaActivo;
+	}
+
 	public CaballoCarrera(String nombre, int edad, double velocidadMaxima, 
 			int numeroTriunfos, double experiencia,
 			boolean estaActivo) {

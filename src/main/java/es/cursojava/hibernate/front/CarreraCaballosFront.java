@@ -20,7 +20,7 @@ public class CarreraCaballosFront {
         int opcion;
         do {
             Utilidades.pintaMenu(new String[]{"1. Insertar nuevo caballo ",
-                "2. Mostrar Caballos","3. Iniciar carrera","4. Salir"} , "");
+                "2. Mostrar Caballos","3. Iniciar carrera","4. Borrar Caballo","5. Salir"} , "");
             opcion = Utilidades.pideDatoNumerico("Elige una opción: ");
             
             switch (opcion) {
@@ -34,12 +34,15 @@ public class CarreraCaballosFront {
                     iniciarCarrera();
                     break;
                 case 4:
+                    eliminarCaballo();
+                    break;
+                case 5:
                     System.out.println("Aaaadios!");;
                     break;
                 default:
                     System.out.println("Opción incorrecta");
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
 
     }
 
@@ -65,5 +68,12 @@ public class CarreraCaballosFront {
 
     private  void iniciarCarrera (){
         servicio.simularCarrera(servicio.obtenerCaballos(true));
+    }
+
+    private void eliminarCaballo (){
+        //mostrarCaballos();
+        int id = Utilidades.pideDatoNumerico("Introduce el id del caballo a eliminar");
+        servicio.eliminarCaballo(id);
+        System.out.println("Caballo con id "+id + " borrado");
     }
 }
