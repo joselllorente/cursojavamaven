@@ -6,6 +6,11 @@ public class ValidarEmail {
 		// asdasd@asd ase.es
 		// asdasd@asdasees
 		// asdasd@asda@se.es
+		getError();
+
+	}
+
+	private static void getError() {
 		String email = "   asdasd@asqweasd  ";
 		email = email.toLowerCase().trim();
 		// email = email.replace(" ", "");
@@ -61,7 +66,6 @@ public class ValidarEmail {
 		} else {
 			System.out.println("El email " + email + " es incorrecto por:\n" + error);
 		}
-
 	}
 
 }
