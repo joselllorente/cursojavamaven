@@ -8,6 +8,8 @@ public class CaballoDTO {
     private double experiencia;
     private boolean activo;
     private double avance;
+    private String nombreJinete;
+    private String nacionalidadJinete;
 
     public CaballoDTO(String nombre, int edad, double velocidadMaxima, int numeroDeTriunfos, double experiencia) {
         this.nombre = nombre;
@@ -28,7 +30,24 @@ public class CaballoDTO {
         this.activo = activo;
     }
 
+    public CaballoDTO(String nombre, int edad, double velocidadMaxima, int numeroDeTriunfos, double experiencia,
+            boolean activo, String nombreJinete, String nacionalidadJinete) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.velocidadMaxima = velocidadMaxima;
+        this.numeroDeTriunfos = numeroDeTriunfos;
+        this.experiencia = experiencia;
+        this.activo = activo;
+        this.nombreJinete = nombreJinete;
+        this.nacionalidadJinete = nacionalidadJinete;
+    }
 
+    
+
+    public CaballoDTO(String nombreJinete, String nacionalidadJinete) {
+        this.nombreJinete = nombreJinete;
+        this.nacionalidadJinete = nacionalidadJinete;
+    }
 
     public String getNombre() {
         return nombre;
@@ -65,6 +84,22 @@ public class CaballoDTO {
     }
     public void setAvance(double avance) {
         this.avance = avance;
+    }
+
+    public String getNombreJinete() {
+        return nombreJinete;
+    }
+
+    public void setNombreJinete(String nombreJinete) {
+        this.nombreJinete = nombreJinete;
+    }
+
+    public String getNacionalidadJinete() {
+        return nacionalidadJinete;
+    }
+
+    public void setNacionalidadJinete(String nacionalidadJinete) {
+        this.nacionalidadJinete = nacionalidadJinete;
     }
 
     @Override

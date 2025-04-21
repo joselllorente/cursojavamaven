@@ -7,6 +7,7 @@ import es.cursojava.hibernate.services.CarreraService;
 import es.cursojava.inicio.funciones.Utilidades;
 
 public class CarreraCaballosFront {
+
     private CarreraService servicio;
     private String nombreCarrera;
 
@@ -20,7 +21,9 @@ public class CarreraCaballosFront {
         int opcion;
         do {
             Utilidades.pintaMenu(new String[]{"1. Insertar nuevo caballo ",
-                "2. Mostrar Caballos","3. Iniciar carrera","4. Borrar Caballo","5. Salir"} , "");
+                "2. Mostrar Caballos","3. Iniciar carrera",
+                "4. Borrar Caballo","5. Cambiar Jinete"
+                ,"6. Salir"} , "");
             opcion = Utilidades.pideDatoNumerico("Elige una opción: ");
             
             switch (opcion) {
@@ -37,12 +40,15 @@ public class CarreraCaballosFront {
                     eliminarCaballo();
                     break;
                 case 5:
+                    cambiarJinete();
+                    break;
+                case 6:
                     System.out.println("Aaaadios!");;
                     break;
                 default:
                     System.out.println("Opción incorrecta");
             }
-        } while (opcion != 5);
+        } while (opcion != 6);
 
     }
 
@@ -54,16 +60,23 @@ public class CarreraCaballosFront {
         int triunfos = Utilidades.pideDatoNumerico("Número de triunfos: : ");
         double experiencia = Utilidades.pideDatoDecimal("Experiencia (0.0 a 10.0): ");
         String activo = Utilidades.pideDatoCadena("¿Está activo? ");
+        String nombreJinete = Utilidades.pideDatoCadena("Nombre Jinete: ");
+        String nacionalidadJinete = Utilidades.pideDatoCadena("Nacionalidad Jinete: ");
 
         CaballoDTO caballoDto = new CaballoDTO(nombre, edad, velocidad, triunfos, experiencia, 
-                activo.equalsIgnoreCase("si"));
+                activo.equalsIgnoreCase("si"), nombreJinete, nacionalidadJinete);
+
         servicio.insertarCaballo(caballoDto);
         return caballoDto;
     }
 
     private void mostrarCaballos (){
         List<CaballoDTO> caballos = servicio.obtenerCaballos(false);
-        caballos.forEach(System.out::println);
+        for (CaballoDTO caballoDTO : caballos) {
+            System.out.println(caballoDTO.getNombre());
+            System.out.println(caballoDTO.getNombreJinete());
+        }
+        //caballos.forEach(System.out::println);
     }
 
     private  void iniciarCarrera (){
@@ -75,5 +88,22 @@ public class CarreraCaballosFront {
         int id = Utilidades.pideDatoNumerico("Introduce el id del caballo a eliminar");
         servicio.eliminarCaballo(id);
         System.out.println("Caballo con id "+id + " borrado");
+    }
+
+    private void cambiarJinete(){
+        long idCaballo = Utilidades.pideDatoNumerico("Introduce id caballo a actualizar su Jinete");
+
+        
+        CaballoDTO caballoDTO = servicio.obtenerJineteCaballo(idCaballo);
+        System.out.println("El jinete actual es: ");
+        System.out.println("\t"+caballoDTO.getNombreJinete());
+        System.out.println("\t"+caballoDTO.getNacionalidadJinete());
+
+        String nombreJinete = Utilidades.pideDatoCadena("Nombre Jinete: ");
+        String nacionalidadJinete = Utilidades.pideDatoCadena("Nacionalidad Jinete: ");
+        caballoDTO.setNombreJinete(nombreJinete);
+        caballoDTO.setNacionalidadJinete(nacionalidadJinete);
+
+        servicio.actualizarJineteCaballo(idCaballo, caballoDTO);
     }
 }

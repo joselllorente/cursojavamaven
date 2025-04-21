@@ -2,6 +2,7 @@ package es.cursojava.hibernate.dao;
 
 import java.util.List;
 
+import es.cursojava.hibernate.dto.CaballoDTO;
 import es.cursojava.hibernate.entities.CaballoCarrera;
 
 public class CaballoDAOJDBCImpl implements CaballoDAO{
@@ -33,6 +34,18 @@ public class CaballoDAOJDBCImpl implements CaballoDAO{
     public void actualizar(CaballoCarrera caballo) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'actualizar'");
+    }
+
+    @Override
+    public CaballoCarrera getCaballoPorId(long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getCaballoPorId'");
+    }
+
+    @Override
+    public CaballoDTO obtenerJinete(long caballoId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerJinete'");
     }
 
 
