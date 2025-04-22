@@ -81,4 +81,17 @@ public class CaballoDAOImpl implements CaballoDAO {
 
         return cc;
     }
+
+    @Override
+    public List<CaballoCarrera> obtenerCaballosPorNacionalidadJinete(String nacionalidad) {
+        Session session = HibernateUtil.getSession();
+        String queryNacionalidadJinete = "from CaballoCarrera cc where cc.jinete.nacionalidad  =: param1";
+        Query<CaballoCarrera> query = session.createQuery(queryNacionalidadJinete, CaballoCarrera.class);
+        query.setParameter("param1", nacionalidad);
+
+        List<CaballoCarrera> caballos = query.list();
+
+        return caballos;
+    }
+
 }

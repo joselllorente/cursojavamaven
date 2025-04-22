@@ -121,4 +121,8 @@ public class CarreraService {
 
         dao.actualizar(cc);
     }
+
+    public List<CaballoCarrera> obtenerCaballosNacionalidadJinete(String nacionalidad){
+        return dao.obtenerCaballosPorNacionalidadJinete(nacionalidad);
+    }
 }

@@ -13,4 +13,5 @@ public interface CaballoDAO {
     void eliminar(Long id);
     void actualizar(CaballoCarrera caballo);
     CaballoDTO obtenerJinete (long caballoId);
+    List<CaballoCarrera> obtenerCaballosPorNacionalidadJinete(String nacionalidad);
 }

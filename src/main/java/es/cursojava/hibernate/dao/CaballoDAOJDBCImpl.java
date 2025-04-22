@@ -48,5 +48,11 @@ public class CaballoDAOJDBCImpl implements CaballoDAO{
         throw new UnsupportedOperationException("Unimplemented method 'obtenerJinete'");
     }
 
+    @Override
+    public List<CaballoCarrera> obtenerCaballosPorNacionalidadJinete(String nacionalidad) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerCaballosPorNacionalidadJinete'");
+    }
+
 
 }
