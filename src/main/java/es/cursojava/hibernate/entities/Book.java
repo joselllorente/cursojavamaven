@@ -6,8 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="TB_LIBROS")
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +18,7 @@ public class Book {
     private String title;
 
     @ManyToOne
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "FK_AUTOR")
     private Autor author;
 
     public Book() {

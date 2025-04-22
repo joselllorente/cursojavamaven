@@ -14,7 +14,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
 
         <!-- Mostrar SQL por consola -->
-        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
 
         <!-- Crear y borrar la base de datos en cada ejecución -->
@@ -37,5 +37,7 @@
         <mapping class="es.cursojava.hibernate.entities.CarnetBiblioteca"/>
         <mapping class="es.cursojava.hibernate.entities.Jinete"/>
         <mapping class="es.cursojava.hibernate.entities.Cliente"/>
+        <mapping class="es.cursojava.hibernate.entities.Autor"/>
+        <mapping class="es.cursojava.hibernate.entities.Book"/>
     </session-factory>
 </hibernate-configuration>

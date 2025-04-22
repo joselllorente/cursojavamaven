@@ -1,0 +1,16 @@
+Entities
+==============================================
+Entity de clientes (Ya creado)
+Entity de pedidos con id, descripción, fechaPedido, totalPedido
+
+Un cliente puede tener varios pedidos
+
+Insertar:
+==============================================
+3 clientes por cada cliente 3-5 pedidos
+
+Consultar:
+==============================================
++ Por cada email mostrar la media de todos los pedidos
++ En una fecha concreta mostrar el total de todos los pedidos
+(Mostrar las cantidades con el formato 3.123.432,46)
