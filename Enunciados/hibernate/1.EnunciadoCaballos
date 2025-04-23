@@ -15,7 +15,7 @@ estaActivo	boolean	Puede ser verdadero o falso. Indica si el caballo está actua
 Crear 5 caballos e insertarlos en la tabla
 
 
-Ejericio 2.
+Ejercicio 2.
 ====================================================
 Crear Menú:
 
@@ -30,3 +30,20 @@ Crear Menú:
 	
 	+ Mostrar datos del caballo ganador
 3. Salir
+
+Ejercicio 3.
+====================================================
+Crear Entiy Carrera -->  id, nombre, lugar;
+Un caballo puede tener varias carreras
+
+- Crear 3 carreras y asignarle todas las carreras a cada caballo 
+
+- Mostrar todas las carreras con el nombre de los caballos activos y su jinete asociado
+
+- Mostrar una lista para las carreras de una ciudad ordenada por el nombre del jinete y solo de los caballos que estén activos donde se mostrará:
+	Nombre de la carrera
+	Nombre del caballo que participa
+	Nombre del jinete de ese caballo
+
+
+
