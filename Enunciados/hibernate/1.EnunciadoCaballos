@@ -40,7 +40,8 @@ Un caballo puede tener varias carreras
 
 - Mostrar todas las carreras con el nombre de los caballos activos y su jinete asociado
 
-- Mostrar una lista para las carreras de una ciudad ordenada por el nombre del jinete y solo de los caballos que estén activos, donde se mostrará:
+- Mostrar una lista para las carreras de una ciudad ordenada 
+  por el nombre del jinete y solo de los caballos que estén activos, donde se mostrará:
 	+ Nombre de la carrera
 	+ Nombre del caballo que participa
 	+ Nombre del jinete de ese caballo

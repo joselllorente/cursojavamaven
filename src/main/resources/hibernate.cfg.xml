@@ -40,5 +40,6 @@
         <mapping class="es.cursojava.hibernate.entities.Pedido"/>
         <mapping class="es.cursojava.hibernate.entities.Autor"/>
         <mapping class="es.cursojava.hibernate.entities.Book"/>
+        <mapping class="es.cursojava.hibernate.entities.Carrera"/>
     </session-factory>
 </hibernate-configuration>
