@@ -1,0 +1,33 @@
+Ejercicio 1
+====================================
+Crea una aplicación en Java con Hibernate donde se modele lo siguiente:
+
+Cada Estudiante tiene un único Carnet de Biblioteca.
+
+El CarnetBiblioteca incluye una fecha de emisión y una fecha de expiración.
+
+El programa debe permitir:
+
+Insertar un estudiante con su carnet.
+
+Consultar todos los estudiantes con sus carnets.
+
+Ejercicio 2
+====================================
+Crea un programa en Java usando Hibernate donde:
+A partir de la entidad CaballoCarreras, se define una nueva entidad Jinete con nombre y nacionalidad.
+
+Cada caballo tiene asignado un jinete.
+
+El programa debe permitir:
+Insertar un caballo con su jinete. En la opción insertar Caballo se deberá pedir los datos del Jinete
+Consultar los caballos con sus jinetes. En la opción de consultar Caballos se deberá mostrar los datos de cada caballo con la de sus jinetes.
+
+Ampliar el menú:
+Meter opción cambiar jinete, 
+	+ se pedirá el caballo al que queremos cambiar el jinete, 
+	+ mostrará los datos del jinete actual
+	+ se pedirán los datos del nuevo jinete 
+	+ y se actualizara el caballo asociándole el nuevo jinete.
+Mostrar la información de los caballos cuya nacionalidad del jinete sea la solicitada por consola
+

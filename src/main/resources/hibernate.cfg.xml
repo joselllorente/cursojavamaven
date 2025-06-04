@@ -19,7 +19,7 @@
 
         <!-- Crear y borrar la base de datos en cada ejecución -->
         <!-- <property name="hibernate.hbm2ddl.auto">create-drop</property> -->
-        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- none(Por defecto en Hibernate 5.2+) No realiza ninguna acción sobre el esquema.
         validate:	Comprueba que las tablas y columnas existen y coinciden con las entidades. No crea ni actualiza.
@@ -31,6 +31,15 @@
         <!-- Entidad mapeada -->
         <mapping class="es.cursojava.hibernate.Persona"/>
         <mapping class="es.cursojava.hibernate.entities.CaballoCarrera"/>
-
+        <mapping class="es.cursojava.hibernate.unoauno.Usuario"/>
+        <mapping class="es.cursojava.hibernate.unoauno.Direccion"/>
+        <mapping class="es.cursojava.hibernate.entities.Estudiante"/>
+        <mapping class="es.cursojava.hibernate.entities.CarnetBiblioteca"/>
+        <mapping class="es.cursojava.hibernate.entities.Jinete"/>
+        <mapping class="es.cursojava.hibernate.entities.Cliente"/>
+        <mapping class="es.cursojava.hibernate.entities.Pedido"/>
+        <mapping class="es.cursojava.hibernate.entities.Autor"/>
+        <mapping class="es.cursojava.hibernate.entities.Book"/>
+        <mapping class="es.cursojava.hibernate.entities.Carrera"/>
     </session-factory>
 </hibernate-configuration>

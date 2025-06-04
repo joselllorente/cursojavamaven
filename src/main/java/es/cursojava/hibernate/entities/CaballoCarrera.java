@@ -1,17 +1,19 @@
 package es.cursojava.hibernate.entities;
 
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-
 
 @Entity
 @Table(name = "TB_CABALLOS")
@@ -23,7 +25,7 @@ public class CaballoCarrera {
 
 	@Column(name = "nombre", nullable = false, length = 50, unique = true)
 	private String nombre;
-	
+
 	@Column(name = "edad", nullable = false, columnDefinition = "int check (edad>=2 and edad<=30) ")
 	@Min(value = 2)
 	@Max(value = 30)
@@ -46,10 +48,31 @@ public class CaballoCarrera {
 	@Column(name = "activo")
 	private boolean estaActivo;
 
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "FK_JINETE")
+	private Jinete jinete;
+
 	public CaballoCarrera() {
 	}
 
-	public CaballoCarrera(String nombre, int edad, double velocidadMaxima, int numeroTriunfos, double experiencia,
+	public CaballoCarrera(Long id) {
+		this.id = id;
+	}
+
+	public CaballoCarrera(Long id, String nombre, int edad, double velocidadMaxima, 
+			int numeroTriunfos, double experiencia,
+			boolean estaActivo) {
+		this.id = id;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.velocidadMaxima = velocidadMaxima;
+		this.numeroTriunfos = numeroTriunfos;
+		this.experiencia = experiencia;
+		this.estaActivo = estaActivo;
+	}
+
+	public CaballoCarrera(String nombre, int edad, double velocidadMaxima, 
+			int numeroTriunfos, double experiencia,
 			boolean estaActivo) {
 		super();
 		this.nombre = nombre;
@@ -58,6 +81,21 @@ public class CaballoCarrera {
 		this.numeroTriunfos = numeroTriunfos;
 		this.experiencia = experiencia;
 		this.estaActivo = estaActivo;
+	}
+
+	
+
+	public CaballoCarrera(Long id, String nombre, @Min(2) @Max(30) int edad,
+			@DecimalMin("30.0") @DecimalMax("80.0") double velocidadMaxima, @Min(0) int numeroTriunfos,
+			@DecimalMin("0.0") @DecimalMax("10.0") double experiencia, boolean estaActivo, Jinete jinete) {
+		this.id = id;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.velocidadMaxima = velocidadMaxima;
+		this.numeroTriunfos = numeroTriunfos;
+		this.experiencia = experiencia;
+		this.estaActivo = estaActivo;
+		this.jinete = jinete;
 	}
 
 	public Long getId() {
@@ -116,11 +154,21 @@ public class CaballoCarrera {
 		this.estaActivo = estaActivo;
 	}
 
+	public Jinete getJinete() {
+		return jinete;
+	}
+
+	public void setJinete(Jinete jinete) {
+		this.jinete = jinete;
+	}
+
 	@Override
 	public String toString() {
 		return "CaballoCarrera [id=" + id + ", nombre=" + nombre + ", edad=" + edad + ", velocidadMaxima="
 				+ velocidadMaxima + ", numeroTriunfos=" + numeroTriunfos + ", experiencia=" + experiencia
 				+ ", estaActivo=" + estaActivo + "]";
 	}
+
+	
 
 }
